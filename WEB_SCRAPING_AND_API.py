@@ -28,7 +28,7 @@ def after_request(response):
 @app.route("/")
 def redirect_api():
     return redirect("/api")
-@app.route("/api", methods=['GET','POST'])
+@app.route("/api", methods=['GET','POST']) #can use only POST method
 def thread():
     #now = datetime.datetime.now()           
     #time_now = (now)
